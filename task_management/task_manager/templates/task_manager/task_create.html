@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Create Task{% endblock %}
+
+{% block content %}
+<h1>Create Task</h1>
+<form method="POST">
+    {% csrf_token %}
+    <label for="title">Title:</label>
+    <input type="text" name="title" id="title" required><br>
+    
+    <label for="description">Description:</label>
+    <textarea name="description" id="description" required></textarea><br>
+    
+    <button type="submit">Create Task</button>
+</form>
+{% endblock %}

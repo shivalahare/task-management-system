@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Assign Task{% endblock %}
+
+{% block content %}
+<h1>Assign Task: {{ task.title }}</h1>
+<form method="POST">
+    {% csrf_token %}
+    <label for="assigned_to">Assign to:</label>
+    <select name="assigned_to" id="assigned_to">
+        {% for member in team_members %}
+        <option value="{{ member.id }}">{{ member.username }}</option>
+        {% endfor %}
+    </select><br>
+    
+    <button type="submit">Assign Task</button>
+</form>
+{% endblock %}
