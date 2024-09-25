@@ -6,7 +6,7 @@ This is a Django-based student management system.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/your-repository-name.git
+   git clone https://github.com/shivalahare/task-management-system.git
     
 2. Navigate to the project directory:
     ```bash
