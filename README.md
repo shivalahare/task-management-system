@@ -1,31 +1,108 @@
+
 # Student Management System
 
 This is a Django-based student management system.
 
 ## Installation
 
-1. Clone the repository:
+### Prerequisites
+
+- Python 3.x
+- Git
+- pip (Python package installer)
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/shivalahare/task-management-system.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd task_management
+```
+
+### 2. Set Up a Virtual Environment
+
+It's recommended to use a virtual environment to manage project dependencies.
+
+#### For Ubuntu/Linux:
+
+1. Install `python3-venv` if not installed:
+
    ```bash
-   git clone https://github.com/shivalahare/task-management-system.git
-    
-2. Navigate to the project directory:
-    ```bash
-    cd task_management
-3. Install dependencies:
-    ```bash
-    pip install -r requirements.txt
-    
-4. Migrate Database:
-    ```bash
-    python manage.py makemigrations
-5. Apply migrations:
-    ```bash
-    python manage.py migrate
-6. Run the development server:
-    ```bash
-    python manage.py runserver    
+   sudo apt install python3-venv
+   ```
+
+2. Create a virtual environment:
+
+   ```bash
+   python3 -m venv venv
+   ```
+
+3. Activate the virtual environment:
+
+   ```bash
+   source venv/bin/activate
+   ```
+
+#### For Windows:
+
+1. Install `virtualenv` if not installed:
+
+   ```bash
+   python -m pip install --user virtualenv
+   ```
+
+2. Create a virtual environment:
+
+   ```bash
+   python -m venv venv
+   ```
+
+3. Activate the virtual environment:
+
+   ```bash
+   venv\Scripts\activate
+   ```
+
+### 3. Install Dependencies
+
+Once the virtual environment is activated, install the project dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Set Up the Database
+
+1. Create migrations:
+
+   ```bash
+   python manage.py makemigrations
+   ```
+
+2. Apply the migrations:
+
+   ```bash
+   python manage.py migrate
+   ```
+
+### 5. Run the Development Server
+
+Start the Django development server:
+
+```bash
+python manage.py runserver
+```
+
 ## Usage
-    Access the application at http://127.0.0.1:8000/.
+
+You can now access the application at `http://127.0.0.1:8000/`.
+
+---
 
 ## License
-    This project is licensed under the MIT License.
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
