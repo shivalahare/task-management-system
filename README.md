@@ -15,10 +15,15 @@ This is a Django-based student management system.
     ```bash
     pip install -r requirements.txt
     
-4. Run the development server:
+4. Migrate Database:
     ```bash
-    python manage.py runserver
-    
+    python manage.py makemigrations
+5. Apply migrations:
+    ```bash
+    python manage.py migrate
+6. Run the development server:
+    ```bash
+    python manage.py runserver    
 ## Usage
     Access the application at http://127.0.0.1:8000/.
 
