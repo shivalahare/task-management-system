@@ -1,7 +1,7 @@
 
-# Student Management System
+# Task Management System
 
-This is a Django-based student management system.
+This is a Django-based Task management system.
 
 ## Installation
 
